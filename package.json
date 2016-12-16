@@ -1,0 +1,25 @@
+{
+  "name": "orotter-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "build": "gulp build:sass",
+    "serve": "gulp serve",
+    "styleguide": "nucleus --config config.nucleus.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "cross-spawn": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.0.0",
+    "nucleus-styleguide": "^1.0.8",
+    "run-sequence": "^1.2.2"
+  }
+}

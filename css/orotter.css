@@ -1,0 +1,44 @@
+/** @color Orange 1 */
+/** @color Orange 2 */
+/** @color Orange 3 */
+/** @color Gray 1 */
+/** @color Gray 2 */
+/** @color Gray 3 */
+/** @color Gray 4 */
+/** @color Gray 5 */
+/**
+ * @atom Round Input
+ * @section Specifics
+ * @description
+ *  Title logo.
+ * @markup
+ *   <div class="round-input">
+ *     <input class="round-input-input" type="text">
+ *     <div class="round-input-icon"></div>
+ *   </div>
+ *
+ *   <div class="round-input round-input--primary">
+ *     <input class="round-input-input" type="text">
+ *     <div class="round-input-icon"></div>
+ *   </div>
+ */
+.round-input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #d8d8d8;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .round-input--primary {
+    background: #fff1d4;
+    color: #f5a623; }
+
+.round-input-input {
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  line-height: 30px;
+  font-size: 15px; }
+  .round-input-input:focus {
+    outline: 0; }

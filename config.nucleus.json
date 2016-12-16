@@ -1,0 +1,10 @@
+{
+  "title":  "Orotter UI",
+  "files":  [
+    "styles/**/*.scss"
+  ],
+  "target" : "./styleguide",
+  "css" : [
+      "./css/orotter.css"
+  ]
+}
