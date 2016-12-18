@@ -1,0 +1,42 @@
+.base {
+    background: $orange-2;
+    color: $gray-1;
+}
+
+.page-wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.sidebar .Panel {
+    margin-bottom: 20px;
+}
+
+.main {
+    flex: 1 1 0%;
+}
+
+.main .Panel {
+    margin-bottom: 20px;
+}
+
+.follow-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.follow-list-item {
+    max-width: 50%;
+    flex-basis: 50%;
+}

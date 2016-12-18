@@ -1,0 +1,35 @@
+@import '../_variables';
+
+.RoundInput {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid $gray-4;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: $gray-1;
+
+    &::placeholder {
+        color: $primary;
+    }
+
+    &--primary {
+        border: none;
+        background: $orange-3;
+        color: $orange-1;
+    }
+}
+
+.RoundInput-input {
+    padding: 6px 20px;
+    border: none;
+    background: none;
+    color: inherit;
+    line-height: 30px;
+    font-size: 15px;
+
+    &:focus {
+        outline: 0;
+    }
+}

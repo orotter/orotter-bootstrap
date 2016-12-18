@@ -1,0 +1,47 @@
+@import '../_variables';
+
+.StatsCard {
+
+}
+
+.StatsCard-summary {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.StatsCard-avatar {
+    margin-right: 15px;
+}
+
+.StatsCard-fullname {
+    font-size: 20px;
+}
+
+.StatsCard-username {
+    margin-top: 5px;
+}
+
+.StatsCard-stats {
+    border-top: 1px solid $gray-5;
+}
+
+.StatsCard-stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    & + & {
+        border-top: 1px solid $gray-5;
+    }
+}
+
+.StatsCard-statLabel {
+    color: $gray-3;
+}
+
+.StatsCard-statValue {
+    color: $primary;
+    font-size: 24px;
+}

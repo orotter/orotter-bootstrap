@@ -1,0 +1,40 @@
+@import '../_variables';
+
+// text color
+.u-textGray {
+    color: $gray-2;
+}
+
+.u-textPrimary {
+    color: $primary;
+}
+
+.u-textWhite {
+    color: #fff;
+}
+
+.u-textBlack {
+    color: $gray-1;
+}
+
+// bg color
+.u-bgPrimary {
+    background-color: $primary;
+}
+
+.u-bgWhite {
+    background-color: #fff;
+}
+
+// text weight
+.u-textBold {
+    font-weight: bold;
+}
+
+.u-textLight {
+    font-weight: light;
+}
+
+.u-textCenter {
+    text-align: center;
+}

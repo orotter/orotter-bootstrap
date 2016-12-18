@@ -1,0 +1,23 @@
+@import '../_variables';
+
+.Panel {
+    display: block;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(30, 30, 30, 0.3);
+}
+
+.Panel-title {
+    padding: 15px 0;
+    border-bottom: 1px solid $gray-5;
+    text-align: center;
+
+    &--bold {
+        font-weight: bold;
+    }
+
+    &--jumbo {
+        border-bottom: 2px solid $primary;
+        font-size: 20px;
+    }
+}

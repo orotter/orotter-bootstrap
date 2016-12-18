@@ -1,0 +1,27 @@
+@import '../_variables';
+
+.SummaryCard {
+    display: flex;
+    padding: 16px;
+}
+
+.SummaryCard-avatar {
+    margin-right: 15px;
+}
+
+.SummaryCard-meta {
+    flex: 1 1 auto;
+}
+
+.SummaryCard-fullname {
+    color: $primary;
+    font-size: 15px;
+}
+
+.SummaryCard-username {
+    margin-top: 5px;
+}
+
+.SummaryCard-actions {
+    margin-top: 10px;
+}

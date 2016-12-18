@@ -1,0 +1,23 @@
+@import '../_variables';
+
+.Avatar {
+    display: inline-block;
+    overflow: hidden;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+
+    &--small {
+        width: 46px;
+        height: 46px;
+    }
+
+    &--large {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.Avatar-image {
+    max-width: 100%;
+}
