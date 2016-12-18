@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run serve",
-    "build": "gulp sass",
-    "build:prod": "gulp sass:min",
+    "build": "npm run build:sass && npm run build:sass:min",
+    "build:sass": "gulp sass",
+    "build:sass:min": "gulp sass:min",
     "watch": "gulp watch:sass",
     "serve": "gulp serve",
     "styleguide": "nucleus --config config.nucleus.json",

@@ -43,7 +43,7 @@ Modifier and descendant are named with camel case. (`Avatar--extraLarge`, not `A
 
 ### Utilities
 
-```
+```html
 <div class="u-textCenter">
     Some centerized text.
 </div>
@@ -57,7 +57,7 @@ These utilities' classes are prefixed with `u-`, and camel case behavior names a
 
 ### Button
 
-```
+```html
 <button class="Button">Button</button>
 <button class="Button Button--primary">Primary Button</button>
 ```
