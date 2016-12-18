@@ -7,19 +7,24 @@
     "start": "npm run serve",
     "build": "gulp build:sass",
     "serve": "gulp serve",
-    "styleguide": "nucleus --config config.nucleus.json"
+    "styleguide": "nucleus --config config.nucleus.json",
+    "sites": "concurrently \"lite-server -c bs-config.json\" \"node-sass sites -o sites -w\" "
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.5",
+    "concurrently": "^3.1.0",
     "cross-spawn": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-cached": "^1.1.1",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "node-sass": "^4.0.0",
     "nucleus-styleguide": "^1.0.8",
+    "reset-css": "^2.2.0",
     "run-sequence": "^1.2.2"
   }
 }
