@@ -1,26 +1,18 @@
 @import '../_variables';
 
-/**
- * @atom Button
- * @section Buttons
- * @description
- *  Buttons for various purposes.
- * @markup
- *   <button class="button">Button</button>
- *   <button class="button button--primary">Primary</button>
- *   <button class="button button--primary-invert">Invert</button>
- */
-.button {
+.Button {
     display: inline-block;
-    vertical-align: top;
-    padding: 10px 15px;
+    min-width: 80px;
+    padding: 5px 15px;
     border: 1px solid transparent;
     border-radius: 2px;
+    box-sizing: border-box;
     color: white;
+    font-weight: normal;
     font-size: 15px;
+    vertical-align: top;
     cursor: pointer;
     appearance: none;
-    box-sizing: border-box;
 
     &--primary {
         border-color: $orange-1;
@@ -28,7 +20,7 @@
         color: #fff;
     }
 
-    &--primary-invert {
+    &--primaryInvert {
         border-color: $orange-1;
         background: #fff;
         color: $orange-1;

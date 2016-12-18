@@ -1,0 +1,15 @@
+{
+    "server": {
+        "baseDir": "./sites"
+    },
+    "serveStatic": [
+        {
+            "route": ["/node_modules"],
+            "dir": "node_modules"
+        },
+        {
+            "route": ["/css"],
+            "dir": "css"
+        }
+    ]
+}

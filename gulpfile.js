@@ -1,18 +1,49 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
 const concat = require('gulp-concat');
 const cache = require('gulp-cached');
+const rename = require('gulp-rename');
+const autoprefixer = require('autoprefixer');
+const discardComments = require('postcss-discard-comments');
+const cssnano = require('cssnano');
 const runSequence = require('run-sequence');
 const browserSync = require('browser-sync').create();
 const { execCommand } = require('./scripts/helpers');
 
-gulp.task('build:sass', (cb) => {
-    return gulp.src('./styles/**/*.scss')
-        .pipe(cache('sass'))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(concat('orotter.css'))
-        .pipe(gulp.dest('./css'))
-        .pipe(browserSync.stream());
+gulp.task('sass', (cb) => {
+    return gulp.src('./scss/orotter-bootstrap.scss')
+        .pipe(sass({
+            outputStyle: 'expanded',
+            includePaths: [
+                'node_modules',
+            ],
+        }).on('error', sass.logError))
+        .pipe(postcss([
+            discardComments(),
+            autoprefixer({ browsers: ['last 2 versions'] }),
+        ]))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('sass:min', (cb) => {
+    return gulp.src('./scss/orotter-bootstrap.scss')
+        .pipe(sass({
+            outputStyle: 'expanded',
+            includePaths: [
+                'node_modules',
+            ],
+        }).on('error', sass.logError))
+        .pipe(postcss([
+            autoprefixer({ browsers: ['last 2 versions'] }),
+            cssnano(),
+        ]))
+        .pipe(rename('orotter-bootstrap.min.css'))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('watch:sass', (cb) => {
+    return gulp.watch(['./scss/**/*.scss'], ['sass']);
 });
 
 gulp.task('build:styleguide', (cb) => {
@@ -32,8 +63,8 @@ gulp.task('serve', ['build:sass', 'build:styleguide'], () => {
         }]
     });
 
-    gulp.watch(['./styles/**/*.scss'], () => {
+    gulp.watch(['./scss/**/*.scss'], () => {
         runSequence('build:sass');
     });
-    gulp.watch(['./styles/**/*.scss'], ['build:styleguide']);
+    gulp.watch(['./scss/**/*.scss'], ['build:styleguide']);
 });

@@ -1,0 +1,36 @@
+@import '../_variables';
+
+.GlobalHeader {
+    position: fixed;
+    width: 100%;
+    padding: 11px 0;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(30, 30, 30, 0.3);
+}
+
+.GlobalHeader-content {
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.GlobalHeader-logo {
+    margin-right: auto;
+}
+
+.GlobalHeader-avatar {
+    margin-left: 30px;
+}
+
+.GlobalHeader-actions {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.GlobalHeader-action {
+    & + & {
+        margin-left: 10px;
+    }
+}

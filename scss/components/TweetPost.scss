@@ -1,0 +1,33 @@
+@import '../_variables';
+
+.TweetPost {
+    padding: 20px 20px 15px;
+}
+
+.TweetPost-Msg {
+}
+
+.TweetPost-textarea {
+    $line-height: 28px;
+
+    width: calc(100% - 40px);
+    min-height: $line-height * 3;
+    padding: 10px 20px;
+    border: 1px solid $gray-4;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: $line-height;
+    resize: vertical;
+}
+
+.TweetPost-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.TweetPost-counter {
+    margin: 0 12px;
+    color: $gray-4;
+}
