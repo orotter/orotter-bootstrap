@@ -10,7 +10,7 @@
     "watch": "gulp watch:sass",
     "serve": "gulp serve",
     "styleguide": "nucleus --config config.nucleus.json",
-    "sites": "concurrently \"lite-server -c bs-config.json\" \"npm run watch\" "
+    "sites": "npm run build && concurrently \"lite-server -c bs-config.json\" \"npm run watch\" "
   },
   "keywords": [],
   "author": "",

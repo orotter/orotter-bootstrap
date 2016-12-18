@@ -12,7 +12,7 @@ const browserSync = require('browser-sync').create();
 const { execCommand } = require('./scripts/helpers');
 
 gulp.task('sass', (cb) => {
-    return gulp.src('./styles/orotter-bootstrap.scss')
+    return gulp.src('./scss/orotter-bootstrap.scss')
         .pipe(sass({
             outputStyle: 'expanded',
             includePaths: [
@@ -27,7 +27,7 @@ gulp.task('sass', (cb) => {
 });
 
 gulp.task('sass:min', (cb) => {
-    return gulp.src('./styles/orotter-bootstrap.scss')
+    return gulp.src('./scss/orotter-bootstrap.scss')
         .pipe(sass({
             outputStyle: 'expanded',
             includePaths: [
@@ -42,8 +42,8 @@ gulp.task('sass:min', (cb) => {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('watch:sass', ['sass'], (cb) => {
-    return gulp.watch(['./styles/**/*.scss'], ['sass']);
+gulp.task('watch:sass', (cb) => {
+    return gulp.watch(['./scss/**/*.scss'], ['sass']);
 });
 
 gulp.task('build:styleguide', (cb) => {
@@ -63,8 +63,8 @@ gulp.task('serve', ['build:sass', 'build:styleguide'], () => {
         }]
     });
 
-    gulp.watch(['./styles/**/*.scss'], () => {
+    gulp.watch(['./scss/**/*.scss'], () => {
         runSequence('build:sass');
     });
-    gulp.watch(['./styles/**/*.scss'], ['build:styleguide']);
+    gulp.watch(['./scss/**/*.scss'], ['build:styleguide']);
 });

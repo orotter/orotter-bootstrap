@@ -10,10 +10,6 @@
     vertical-align: top;
     color: $gray-1;
 
-    &::placeholder {
-        color: $primary;
-    }
-
     &--primary {
         border: none;
         background: $orange-3;
@@ -31,5 +27,10 @@
 
     &:focus {
         outline: 0;
+    }
+
+    &::placeholder {
+        line-height: 30px;
+        color: $primary;
     }
 }
