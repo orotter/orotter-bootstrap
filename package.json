@@ -1,8 +1,7 @@
 {
   "name": "orotter-bootstrap",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "A CSS toolset for building oRotter application.",
   "scripts": {
     "start": "npm run serve",
     "build": "npm run build:sass && npm run build:sass:min",
@@ -32,7 +31,6 @@
     "node-sass": "^4.0.0",
     "nucleus-styleguide": "^1.0.8",
     "postcss-discard-comments": "^2.0.4",
-    "reset-css": "^2.2.0",
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
