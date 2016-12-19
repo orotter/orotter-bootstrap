@@ -1,5 +1,48 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Stats Card
+
+Card for user summary.
+
+<div class="Panel">
+    <div class="SummaryCard">
+        <div class="SummaryCard-avatar">
+            <div class="Avatar">
+                <img class="Avatar-image" src="http://fakeimg.pl/300/">
+            </div>
+        </div>
+        <div class="SummaryCard-meta">
+            <div class="SummaryCard-fullname">full name</div>
+            <div class="SummaryCard-username">@user_name</div>
+            <div class="SummaryCard-actions">
+                <button class="Button Button--primary">Follow</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+```
+<div class="Panel">
+    <div class="SummaryCard">
+        <div class="SummaryCard-avatar">
+            <div class="Avatar">
+                <img class="Avatar-image" src="http://fakeimg.pl/300/">
+            </div>
+        </div>
+        <div class="SummaryCard-meta">
+            <div class="SummaryCard-fullname">full name</div>
+            <div class="SummaryCard-username">@user_name</div>
+            <div class="SummaryCard-actions">
+                <button class="Button Button--primary">Follow</button>
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/
 .SummaryCard {
     display: flex;
     padding: 16px;

@@ -1,5 +1,22 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Divider
+
+Divider border.
+
+<div>
+    <div style="font-size: 13px;">Some content</div>
+    <div class="Divider"></div>
+    <div style="font-size: 13px;">Another content</div>
+</div>
+
+```
+<div class="Divider"></div>
+```
+*/
 .Divider {
     border-top: 1px solid $gray-5;
 }

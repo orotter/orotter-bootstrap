@@ -1,5 +1,58 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Stats Card
+
+Card for user stats.
+
+<div class="Panel">
+    <div class="StatsCard">
+        <div class="StatsCard-summary">
+            <div class="StatsCard-avatar">
+                <div class="Avatar Avatar--large">
+                    <img class="Avatar-image" src="http://fakeimg.pl/300/">
+                </div>
+            </div>
+            <div>
+                <div class="StatsCard-fullname">full name</div>
+                <div class="StatsCard-username">@user_name</div>
+            </div>
+        </div>
+        <div class="StatsCard-stats">
+            <div class="StatsCard-stat">
+                <div class="StatsCard-statLabel">stat label</div>
+                <div class="StatsCard-statValue">stat value</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+```
+<div class="Panel">
+    <div class="StatsCard">
+        <div class="StatsCard-summary">
+            <div class="StatsCard-avatar">
+                <div class="Avatar Avatar--large">
+                    <img class="Avatar-image" src="http://fakeimg.pl/300/">
+                </div>
+            </div>
+            <div>
+                <div class="StatsCard-fullname">Full name</div>
+                <div class="StatsCard-username">@user_name</div>
+            </div>
+        </div>
+        <div class="StatsCard-stats">
+            <div class="StatsCard-stat">
+                <div class="StatsCard-statLabel">Stat label</div>
+                <div class="StatsCard-statValue">Stat value</div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/
 .StatsCard {
 
 }

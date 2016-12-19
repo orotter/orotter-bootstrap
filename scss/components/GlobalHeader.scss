@@ -1,8 +1,60 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## GlobalHeader
+
+Global header for the application.
+
+<header class="GlobalHeader" style="position: static;">
+    <div class="GlobalHeader-content">
+        <div class="GlobalHeader-logo">
+            <h1 class="Logo">Title</h1>
+        </div>
+        <div class="GlobalHeader-avatar">
+            <div class="Avatar Avatar--small">
+                <img class="Avatar-image" src="http://fakeimg.pl/300/">
+            </div>
+        </div>
+        <div class="GlobalHeader-actions">
+            <div class="GlobalHeader-action">
+                <button class="Button Button--primaryInvert">ログアウト</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+```
+<header class="GlobalHeader">
+    <div class="GlobalHeader-content">
+        <div class="GlobalHeader-logo">
+            <h1 class="Logo">oRotter</h1>
+        </div>
+        <div class="GlobalHeader-search">
+            <div class="RoundInput RoundInput--primary">
+                <input class="RoundInput-input" type="text" placeholder="ユーザーを検索">
+                <div class="RoundInput-icon"></div>
+            </div>
+        </div>
+        <div class="GlobalHeader-avatar">
+            <div class="Avatar Avatar--small">
+                <img class="Avatar-image" src="http://fakeimg.pl/300/">
+            </div>
+        </div>
+        <div class="GlobalHeader-actions">
+            <div class="GlobalHeader-action">
+                <button class="Button Button--primaryInvert">ログアウト</button>
+            </div>
+        </div>
+    </div>
+</header>
+```
+*/
 .GlobalHeader {
     position: fixed;
     width: 100%;
+    margin: 0;
     padding: 11px 0;
     background: #fff;
     box-shadow: 0 0 4px rgba(30, 30, 30, 0.3);
@@ -11,7 +63,7 @@
 .GlobalHeader-content {
     display: flex;
     align-items: center;
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 

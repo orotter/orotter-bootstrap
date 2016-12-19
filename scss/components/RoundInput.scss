@@ -1,5 +1,32 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Round Input
+
+Input form with rounded corner style.
+
+<div class="RoundInput">
+    <input class="RoundInput-input" type="text" placeholder="Search...">
+    <div class="RoundInput-icon"></div>
+</div>
+<div class="RoundInput RoundInput--primary">
+    <input class="RoundInput-input" type="text" placeholder="Primary style...">
+    <div class="RoundInput-icon"></div>
+</div>
+
+```
+<div class="RoundInput">
+    <input class="RoundInput-input" type="text" placeholder="Search...">
+    <div class="RoundInput-icon"></div>
+</div>
+<div class="RoundInput RoundInput--primary">
+    <input class="RoundInput-input" type="text" placeholder="Primary style...">
+    <div class="RoundInput-icon"></div>
+</div>
+```
+*/
 .RoundInput {
     display: inline-block;
     overflow: hidden;
@@ -11,7 +38,7 @@
     color: $gray-1;
 
     &--primary {
-        border: none;
+        border: 1px solid $orange-3;
         background: $orange-3;
         color: $orange-1;
     }
@@ -31,6 +58,10 @@
 
     &::placeholder {
         line-height: 30px;
+        color: $gray-2;
+    }
+
+    .RoundInput--primary &::placeholder {
         color: $primary;
     }
 }

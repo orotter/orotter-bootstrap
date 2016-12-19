@@ -1,5 +1,56 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Panel
+
+Content container with optional title.
+
+<div class="Panel">
+    <div class="Panel-title">Panel title</div>
+    <div class="u-textCenter">
+        Contents here.
+    </div>
+</div>
+<div style="margin-top: 30px;"></div>
+<div class="Panel">
+    <div class="Panel-title Panel-title--bold">Bold title</div>
+    <div class="u-textCenter">
+        Contents here.
+    </div>
+</div>
+<div style="margin-top: 30px;"></div>
+<div class="Panel">
+    <div class="Panel-title Panel-title--jumbo">Jumbo title</div>
+    <div class="u-textCenter">
+        Contents here.
+    </div>
+</div>
+
+```
+<div class="Panel">
+    <div class="Panel-title">Panel title</div>
+    <div class="u-textCenter">
+        Contents here.
+    </div>
+</div>
+<div style="margin-top: 30px;"></div>
+<div class="Panel">
+    <div class="Panel-title Panel-title--bold">Bold title</div>
+    <div class="u-textCenter">
+        Contents here.
+    </div>
+</div>
+<div style="margin-top: 30px;"></div>
+<div class="Panel">
+    <div class="Panel-title Panel-title--jumbo">Jumbo title</div>
+    <div class="u-textCenter">
+        Contents here.
+    </div>
+</div>
+```
+*/
 .Panel {
     display: block;
     border-radius: 4px;

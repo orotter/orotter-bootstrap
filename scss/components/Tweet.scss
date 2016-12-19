@@ -1,5 +1,64 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Tweet
+
+Tweet message container.
+
+<div class="Panel">
+    <div class="Tweet">
+        <div class="Tweet-tweeterAvatar">
+            <div class="Avatar Avatar--large">
+                <img class="Avatar-image" src="http://fakeimg.pl/300/">
+            </div>
+        </div>
+        <div class="Tweet-content">
+            <div class="Tweet-tweeterMeta">
+                <div class="Tweet-tweeterFullname">full name</div>
+                <div class="Tweet-tweeterUsername">@user_name</div>
+            </div>
+            <div class="Tweet-text">
+                <p>Hey, I'm tweeting!!</p>
+            </div>
+            <div class="Tweet-footer">
+                <div class="Tweet-actions">
+                    <div class="Tweet-action">
+                        999
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+```
+<div class="Tweet">
+    <div class="Tweet-tweeterAvatar">
+        <div class="Avatar Avatar--large">
+            <img class="Avatar-image" src="http://fakeimg.pl/300/">
+        </div>
+    </div>
+    <div class="Tweet-content">
+        <div class="Tweet-tweeterMeta">
+            <div class="Tweet-tweeterFullname">full name</div>
+            <div class="Tweet-tweeterUsername">@user_name</div>
+        </div>
+        <div class="Tweet-text">
+            <p>Hey, I'm tweeting!!</p>
+        </div>
+        <div class="Tweet-footer">
+            <div class="Tweet-actions">
+                <div class="Tweet-action">
+                    999
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/
 .Tweet {
     display: flex;
     padding: 20px;
@@ -12,6 +71,7 @@
 }
 
 .Tweet-content {
+    flex: 1 1 0%;
     padding-top: 12px;
 }
 

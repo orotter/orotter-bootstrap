@@ -1,5 +1,42 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Tweet Post
+
+Tweet post that user can tweet.
+
+<div class="Panel">
+    <div class="TweetPost">
+        <div class="TweetPost-Msg">
+            <textarea class="TweetPost-textarea"></textarea>
+        </div>
+        <div class="TweetPost-footer">
+            <div class="TweetPost-counter">0/999</div>
+            <div class="TweetPost-action">
+                <button class="Button Button--primary">Tweet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+```
+<div class="Panel">
+    <div class="TweetPost">
+        <div class="TweetPost-Msg">
+            <textarea class="TweetPost-textarea"></textarea>
+        </div>
+        <div class="TweetPost-footer">
+            <div class="TweetPost-counter">0/999</div>
+            <div class="TweetPost-action">
+                <button class="Button Button--primary">Tweet</button>
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/
 .TweetPost {
     padding: 20px 20px 15px;
 }
