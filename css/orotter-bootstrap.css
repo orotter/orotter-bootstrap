@@ -363,6 +363,19 @@ textarea{
 .GlobalHeader-action + .GlobalHeader-action{
   margin-left:10px;
 }
+.Icon{
+  display:inline-block;
+  vertical-align:top;
+  width:20px;
+  height:20px;
+}
+
+.Icon svg{
+  display:block;
+  fill:currentColor;
+  width:100%;
+  height:100%;
+}
 .Logo{
   margin:0;
   padding:0;
@@ -460,6 +473,21 @@ textarea{
 
 .RoundInput--primary .RoundInput-input::placeholder{
   color:#f5a623;
+}
+
+.RoundInput-icon{
+  position:absolute;
+  right:20px;
+  top:0;
+  bottom:0;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-align:center;
+      align-items:center;
+}
+
+.RoundInput-icon + .RoundInput-input{
+  padding-right:40px;
 }
 .StatsCard-summary{
   display:-ms-flexbox;
@@ -597,6 +625,10 @@ textarea{
 }
 
 .Tweet-action{
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-align:center;
+      align-items:center;
   color:#b7b7b7;
 }
 .TweetPost{

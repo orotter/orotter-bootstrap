@@ -111,5 +111,7 @@ Tweet message container.
 }
 
 .Tweet-action {
+    display: flex;
+    align-items: center;
     color: $gray-3;
 }

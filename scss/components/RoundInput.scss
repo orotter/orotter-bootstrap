@@ -65,3 +65,16 @@ Input form with rounded corner style.
         color: $primary;
     }
 }
+
+.RoundInput-icon {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+
+    & + .RoundInput-input {
+        padding-right: 40px;
+    }
+}

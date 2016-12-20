@@ -1,0 +1,42 @@
+@import '../_variables';
+
+/*
+@styleguide
+
+## Icon
+
+Display icon.
+
+<div class="Icon">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="16px" height="16px" viewBox="0 0 16 16">
+        <path d="M2.8,14.9l3.5-3.5c0.9,0.5,1.9,0.9,3,0.9c3.1,0,5.6-2.5,5.6-5.6S12.4,1,9.3,1C6.1,1,3.6,3.5,3.6,6.6
+            c0,1.1,0.3,2.1,0.9,3L1,13.1L2.8,14.9z M9.3,10.3c-2,0-3.6-1.6-3.6-3.6S7.2,3,9.3,3s3.6,1.6,3.6,3.6C12.9,8.6,11.3,10.3,9.3,10.3z"
+            />
+    </svg>
+</div>
+
+```
+<div class="Icon">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="16px" height="16px" viewBox="0 0 16 16">
+        <path d="M2.8,14.9l3.5-3.5c0.9,0.5,1.9,0.9,3,0.9c3.1,0,5.6-2.5,5.6-5.6S12.4,1,9.3,1C6.1,1,3.6,3.5,3.6,6.6
+            c0,1.1,0.3,2.1,0.9,3L1,13.1L2.8,14.9z M9.3,10.3c-2,0-3.6-1.6-3.6-3.6S7.2,3,9.3,3s3.6,1.6,3.6,3.6C12.9,8.6,11.3,10.3,9.3,10.3z"
+            />
+    </svg>
+</div>
+```
+*/
+.Icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+}
+
+.Icon svg {
+    display: block;
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+}
