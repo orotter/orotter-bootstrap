@@ -40,3 +40,14 @@
     max-width: 50%;
     flex-basis: 50%;
 }
+
+.more {
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+}
+
+.more .Button {
+    height: 100%;
+    font-size: 18px;
+}

@@ -261,6 +261,19 @@ textarea{
   -ms-flex-preferred-size:50%;
       flex-basis:50%;
 }
+
+.more{
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-direction:column;
+      flex-direction:column;
+  height:46px;
+}
+
+.more .Button{
+  height:100%;
+  font-size:18px;
+}
 .Avatar{
   display:inline-block;
   overflow:hidden;
@@ -355,6 +368,10 @@ textarea{
   padding:0;
   font-size:28px;
   font-weight:bold;
+}
+
+.Logo svg{
+  width:100%;
 }
 .Panel{
   display:block;
