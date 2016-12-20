@@ -10,9 +10,11 @@
     "styleguide": "gulp styleguide",
     "sites": "gulp sass && concurrently \"lite-server -c bs-config.json\" \"gulp watch:sass\" "
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["css", "sass", "web"],
+  "author": "orotter",
   "license": "MIT",
+  "style": "css/orotter-bootstrap.css",
+  "main": "css/orotter-bootstrap.css",
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "browser-sync": "^2.18.5",
