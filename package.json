@@ -1,6 +1,6 @@
 {
   "name": "orotter-bootstrap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CSS toolset for building oRotter application.",
   "scripts": {
     "build": "npm run build:sass && npm run build:sass:min",
