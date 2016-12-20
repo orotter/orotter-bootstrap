@@ -2,6 +2,7 @@
     "server": {
         "baseDir": "./sites"
     },
+    "port": 5555,
     "serveStatic": [
         {
             "route": ["/node_modules"],

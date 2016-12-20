@@ -3,12 +3,15 @@ const fs = require('fs');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
+const gulpif = require('gulp-if');
 const autoprefixer = require('autoprefixer');
 const discardComments = require('postcss-discard-comments');
 const styleGuide = require('postcss-style-guide');
 const cssnano = require('cssnano');
 const cheerio = require('cheerio');
 const browserSync = require('browser-sync').create();
+const event = process.env.npm_lifecycle_event || '';
+const isRunningSites = event.includes('sites');
 
 // Extra styles to apply styleguide page.
 // TODO: move seperate file and importing it
@@ -43,13 +46,17 @@ gulp.task('sass', (cb) => {
         }).on('error', sass.logError))
         .pipe(postcss([
             autoprefixer({ browsers: ['last 2 versions'] }),
-            styleGuide({
-                project: 'oRotter bootstrap',
-                dest: 'styleguide/index.html',
-                theme: 'psg-theme-sassline',
-                themePath: 'node_modules/psg-theme-sassline'
-            }),
         ]))
+        .pipe(gulpif(!isRunningSites,
+            postcss([
+                styleGuide({
+                    project: 'oRotter bootstrap',
+                    dest: 'styleguide/index.html',
+                    theme: 'psg-theme-sassline',
+                    themePath: 'node_modules/psg-theme-sassline'
+                })
+            ])
+        ))
         .pipe(postcss([
             discardComments(),
         ]))

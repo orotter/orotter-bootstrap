@@ -8,7 +8,7 @@
     "build:sass:min": "gulp sass:min",
     "watch": "gulp watch:sass",
     "styleguide": "gulp styleguide",
-    "sites": "npm run build && concurrently \"lite-server -c bs-config.json\" \"npm run watch\" "
+    "sites": "gulp sass && concurrently \"lite-server -c bs-config.json\" \"gulp watch:sass\" "
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "concurrently": "^3.1.0",
     "cssnano": "^3.9.1",
     "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
