@@ -1,0 +1,15 @@
+@import '../_variables';
+
+html {
+    font-family: $font-sans-serif;
+}
+
+code {
+    font-family: $font-mono;
+}
+
+button,
+input,
+textarea {
+    font-family: $font-sans-serif;
+}

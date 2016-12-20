@@ -1,5 +1,34 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Avatar
+
+Display user avatar.
+
+<div class="Avatar Avatar--small">
+    <img class="Avatar-image" src="http://fakeimg.pl/300/">
+</div>
+<div class="Avatar Avatar">
+    <img class="Avatar-image" src="http://fakeimg.pl/300/">
+</div>
+<div class="Avatar Avatar--large">
+    <img class="Avatar-image" src="http://fakeimg.pl/300/">
+</div>
+
+```
+<div class="Avatar Avatar--small">
+    <img class="Avatar-image" src="http://fakeimg.pl/300/">
+</div>
+<div class="Avatar">
+    <img class="Avatar-image" src="http://fakeimg.pl/300/">
+</div>
+<div class="Avatar Avatar--large">
+    <img class="Avatar-image" src="http://fakeimg.pl/300/">
+</div>
+```
+*/
 .Avatar {
     display: inline-block;
     overflow: hidden;

@@ -14,6 +14,9 @@ A CSS toolset for building oRotter application.
 ```sh
 $ npm install
 
+# See styleguide
+$ npm run styleguide
+
 # See example site page
 $ npm run sites
 ```

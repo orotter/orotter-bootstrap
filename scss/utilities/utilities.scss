@@ -1,40 +1,76 @@
 @import '../_variables';
 
+/*
+@styleguide
+
+## Utilities
+
+You can use utility classes for any elements.
+
+<div class="u-textPrimary">Primary text</div>
+<div class="u-textGray">Gray text</div>
+<div class="u-textWhite u-bgBlack">White text</div>
+<div class="u-textBlack">Black text</div>
+<div class="u-textBold">Bold text</div>
+<div class="u-textLight">Light text</div>
+<div class="u-textCenter">Centered text</div>
+<div class="u-bgPrimary">Primary bg</div>
+<div class="u-bgWhite">White bg</div>
+<div class="u-bgBlack">Black bg</div>
+
+```
+<div class="u-textPrimary">Primary text</div>
+<div class="u-textGray">Gray text</div>
+<div class="u-textWhite u-bgBlack">White text</div>
+<div class="u-textBlack">Black text</div>
+<div class="u-textBold">Bold text</div>
+<div class="u-textLight">Light text</div>
+<div class="u-textCenter">Centered text</div>
+<div class="u-bgPrimary">Primary bg</div>
+<div class="u-bgWhite">White bg</div>
+<div class="u-bgBlack">Black bg</div>
+```
+*/
+
 // text color
-.u-textGray {
-    color: $gray-2;
+.u-textPrimary {
+    color: $primary !important;
 }
 
-.u-textPrimary {
-    color: $primary;
+.u-textGray {
+    color: $gray-2 !important;
 }
 
 .u-textWhite {
-    color: #fff;
+    color: #fff !important;
 }
 
 .u-textBlack {
-    color: $gray-1;
-}
-
-// bg color
-.u-bgPrimary {
-    background-color: $primary;
-}
-
-.u-bgWhite {
-    background-color: #fff;
+    color: $gray-1 !important;
 }
 
 // text weight
 .u-textBold {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .u-textLight {
-    font-weight: light;
+    font-weight: light !important;
 }
 
 .u-textCenter {
-    text-align: center;
+    text-align: center !important;
+}
+
+// bg color
+.u-bgPrimary {
+    background-color: $primary !important;
+}
+
+.u-bgWhite {
+    background-color: #fff !important;
+}
+
+.u-bgBlack {
+    background-color: $gray-1 !important;
 }

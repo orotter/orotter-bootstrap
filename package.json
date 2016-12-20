@@ -3,13 +3,11 @@
   "version": "0.0.1",
   "description": "A CSS toolset for building oRotter application.",
   "scripts": {
-    "start": "npm run serve",
     "build": "npm run build:sass && npm run build:sass:min",
     "build:sass": "gulp sass",
     "build:sass:min": "gulp sass:min",
     "watch": "gulp watch:sass",
-    "serve": "gulp serve",
-    "styleguide": "nucleus --config config.nucleus.json",
+    "styleguide": "gulp styleguide",
     "sites": "npm run build && concurrently \"lite-server -c bs-config.json\" \"npm run watch\" "
   },
   "keywords": [],
@@ -18,20 +16,18 @@
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "browser-sync": "^2.18.5",
+    "cheerio": "^0.22.0",
     "concurrently": "^3.1.0",
-    "cross-spawn": "^5.0.1",
     "cssnano": "^3.9.1",
     "gulp": "^3.9.1",
-    "gulp-cached": "^1.1.1",
-    "gulp-concat": "^2.6.1",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "lite-server": "^2.2.2",
     "node-sass": "^4.0.0",
-    "nucleus-styleguide": "^1.0.8",
     "postcss-discard-comments": "^2.0.4",
-    "run-sequence": "^1.2.2"
+    "postcss-style-guide": "^0.13.0",
+    "psg-theme-sassline": "github:sotayamashita/psg-theme-sassline"
   },
   "dependencies": {
     "normalize.css": "^5.0.0"
